@@ -31,12 +31,12 @@ class SecondViewController: UIViewController,UICollectionViewDataSource,UICollec
         collection.backgroundColor = UIColor.yellow
         collection.isPagingEnabled = true
         collection.delegate = self
-        collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "UICollectionViewCell")
+        collection.register(HomeBaseCollectionViewCell.self, forCellWithReuseIdentifier: "HomeBaseCollectionViewCell")
         collection.dataSource = self
         collection.showsHorizontalScrollIndicator = false
         
         let layout = collection.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width: 120, height: 120)
+        layout.itemSize = CGSize(width: 120, height: 180)
         layout.minimumLineSpacing = 2
         layout.minimumInteritemSpacing = 2
         layout.scrollDirection = .vertical
@@ -48,11 +48,8 @@ class SecondViewController: UIViewController,UICollectionViewDataSource,UICollec
         }
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UICollectionViewCell", for: indexPath)
-            let R = (arc4random()%256)
-            let G = (arc4random()%256)
-            let B = (arc4random()%256)
-            cell.backgroundColor = UIColor(red: CGFloat(R)/256, green: CGFloat(G)/256, blue: CGFloat(B)/256, alpha: 1)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeBaseCollectionViewCell", for: indexPath) as! HomeBaseCollectionViewCell
+            
             return cell
         }
 
