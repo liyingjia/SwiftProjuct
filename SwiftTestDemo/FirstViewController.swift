@@ -10,12 +10,14 @@ import UIKit
 import SnapKit
 
 class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate {
+    //MARK: - 懒加载
+    lazy var tableView : UITableView = UITableView()
     
-    var tableView = UITableView()
+    let array = ["一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 当回忆久远 初心始现 我做了那么多改变 只是为了我心中不变 默默地深爱着你无论相见不相见 我做了那么多改变 只是为了我心中不变 我多想你看见","一天宛如一年","一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 ","一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 当回忆久远 初心始现 我做了那么多改变 只是为了我心中不变 默默地深爱着你无论相见不相见 我做了那么多改变 只是为了我心中不变 我多想你看见","一天宛如一年 一年宛如一天 任时光流转 我还是我 一现 我做了那么多改变 只是为了我心中不变 默默地深爱着你无论相见不相见 我做了那么多改变 只是为了我心中不变 我多想你看见","一天了千遍 千遍只为一遍那么多改变 只是为了我心中不变无论相见不相见 我做了那么多改变 只是看见","一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 当回忆久远 初心始现 我做了那么多改变 只是为了我心中不变 "]
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        array.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -25,12 +27,20 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeBaseTableViewCell", for: indexPath) as! HomeBaseTableViewCell
         cell.nameLabel.text = "fadsfadf"
-        cell.titleLabel.text = "一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 当回忆久远 初心始现 我做了那么多改变 只是为了我心中不变 默默地深爱着你无论相见不相见 我做了那么多改变 只是为了我心中不变 我多想你看见"
+        cell.titleLabel.text = array[indexPath.row]
         cell.selectionStyle = .none
         return cell
     }
     
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewCon = ForthViewController()
+        self.navigationController?.pushViewController(viewCon, animated: true)
+//        let nav = LYNavigationController()
+        
+        
+        self.present(viewCon, animated: true, completion: nil)
+    }
+    // MARK:-系统方法
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -52,6 +62,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             make.left.right.equalTo(self.view).offset(0)
             make.bottom.equalTo(self.view).offset(-HYDevice_TabBar_Height)
         }
+        LYLog(message: 1243)
     }
     
    

@@ -14,6 +14,8 @@ class SecondViewController: UIViewController,UICollectionViewDataSource,UICollec
 
     fileprivate lazy var collection : UICollectionView = UICollectionView.init(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout())
     
+   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +42,8 @@ class SecondViewController: UIViewController,UICollectionViewDataSource,UICollec
         layout.minimumLineSpacing = 2
         layout.minimumInteritemSpacing = 2
         layout.scrollDirection = .vertical
+        
+       LYLog(message: "helloWorld")
         
     }
     
