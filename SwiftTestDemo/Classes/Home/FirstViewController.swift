@@ -9,7 +9,8 @@
 import UIKit
 import SnapKit
 
-class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate {
+
+class FirstViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate {
     //MARK: - 懒加载
     lazy var tableView : UITableView = UITableView()
     
@@ -37,8 +38,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         self.navigationController?.pushViewController(viewCon, animated: true)
 //        let nav = LYNavigationController()
         
-        
-        self.present(viewCon, animated: true, completion: nil)
+//        self.present(viewCon, animated: true, completion: nil)
     }
     // MARK:-系统方法
     override func viewDidLoad() {
@@ -58,7 +58,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         self.tableView.register(HomeBaseTableViewCell.classForCoder(), forCellReuseIdentifier: "HomeBaseTableViewCell")
         self.view.addSubview(self.tableView)
         self.tableView.snp_makeConstraints { (make) in
-            make.top.equalTo(self.view).offset(HYDevice_NaviBar_Height)
+            make.top.equalTo(self.view).offset(0)
             make.left.right.equalTo(self.view).offset(0)
             make.bottom.equalTo(self.view).offset(-HYDevice_TabBar_Height)
         }
@@ -96,4 +96,7 @@ extension FirstViewController
             statusBarStyle = .lightContent
         }
     }
+    
+    
 }
+

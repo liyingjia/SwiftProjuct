@@ -23,7 +23,9 @@ target 'SwiftTestDemo' do
   pod 'NVActivityIndicatorView' #很多漂亮的加载指示器。
 #  pod 'DGElasticPullToRefresh' #有弹性效果的下拉刷新控件。
   pod 'WRNavigationBar' #,'~>1.2.0’
-
+  pod 'Moya'
+  pod 'SVProgressHUD'
+  pod 'LLCycleScrollView'
 
   # Pods for SwiftTestDemo
 

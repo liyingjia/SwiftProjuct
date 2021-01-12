@@ -28,6 +28,20 @@
 		848D49F0259C53CB00B1734F /* WRNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D49EE259C53CB00B1734F /* WRNavigationBar.swift */; };
 		848D49F1259C53CB00B1734F /* WRCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D49EF259C53CB00B1734F /* WRCustomNavigationBar.swift */; };
 		849EF135259D6C4700B1BE97 /* HomeBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849EF134259D6C4700B1BE97 /* HomeBaseCollectionViewCell.swift */; };
+		84A6CA2425ABF7D50018ECEF /* marketOrderInfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84A6CA2325ABF7D50018ECEF /* marketOrderInfo.txt */; };
+		84A6CA2B25AC39CC0018ECEF /* Button_Extendion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6CA2A25AC39CC0018ECEF /* Button_Extendion.swift */; };
+		84A6CA3825AD46040018ECEF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6CA3725AD46040018ECEF /* BaseViewController.swift */; };
+		84A6CA3D25AD46810018ECEF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6CA3C25AD46810018ECEF /* HomeViewController.swift */; };
+		84A6CA4225AD4ADA0018ECEF /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6CA4125AD4ADA0018ECEF /* UIBarButtonItemExtension.swift */; };
+		84A6CA5225AD54500018ECEF /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6CA5125AD54500018ECEF /* TitleButton.swift */; };
+		84A6CA6A25AD72330018ECEF /* NSObject+TFPopupMethodExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6CA5C25AD72330018ECEF /* NSObject+TFPopupMethodExchange.m */; };
+		84A6CA6B25AD72330018ECEF /* UIScrollView+TFPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6CA6225AD72330018ECEF /* UIScrollView+TFPopup.m */; };
+		84A6CA6C25AD72330018ECEF /* TFPopupParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6CA6425AD72330018ECEF /* TFPopupParam.m */; };
+		84A6CA6D25AD72330018ECEF /* TFPopupLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6CA6625AD72330018ECEF /* TFPopupLoading.m */; };
+		84A6CA6E25AD72330018ECEF /* TFPopupToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6CA6725AD72330018ECEF /* TFPopupToast.m */; };
+		84A6CA6F25AD72330018ECEF /* UIView+TFPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6CA6825AD72330018ECEF /* UIView+TFPopup.m */; };
+		84A6CA7025AD72330018ECEF /* TFPopupExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6CA6925AD72330018ECEF /* TFPopupExtension.m */; };
+		84A6CA7725AD72900018ECEF /* HomePopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A6CA7625AD72900018ECEF /* HomePopView.swift */; };
 		84E810B525A5C029002FB774 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E810B425A5C029002FB774 /* ForthViewController.swift */; };
 		84E810D025A804B3002FB774 /* HttpTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E810CF25A804B3002FB774 /* HttpTools.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +91,30 @@
 		848D49EE259C53CB00B1734F /* WRNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRNavigationBar.swift; sourceTree = "<group>"; };
 		848D49EF259C53CB00B1734F /* WRCustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCustomNavigationBar.swift; sourceTree = "<group>"; };
 		849EF134259D6C4700B1BE97 /* HomeBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		84A6CA2325ABF7D50018ECEF /* marketOrderInfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = marketOrderInfo.txt; sourceTree = "<group>"; };
+		84A6CA2A25AC39CC0018ECEF /* Button_Extendion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button_Extendion.swift; sourceTree = "<group>"; };
+		84A6CA3725AD46040018ECEF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		84A6CA3C25AD46810018ECEF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		84A6CA4125AD4ADA0018ECEF /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
+		84A6CA5125AD54500018ECEF /* TitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		84A6CA5A25AD72330018ECEF /* UIScrollView+TFPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TFPopup.h"; sourceTree = "<group>"; };
+		84A6CA5B25AD72330018ECEF /* TFPopupParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPopupParam.h; sourceTree = "<group>"; };
+		84A6CA5C25AD72330018ECEF /* NSObject+TFPopupMethodExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TFPopupMethodExchange.m"; sourceTree = "<group>"; };
+		84A6CA5D25AD72330018ECEF /* TFPopupToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPopupToast.h; sourceTree = "<group>"; };
+		84A6CA5E25AD72330018ECEF /* TFPopupLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPopupLoading.h; sourceTree = "<group>"; };
+		84A6CA5F25AD72330018ECEF /* TFPopupConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPopupConst.h; sourceTree = "<group>"; };
+		84A6CA6025AD72330018ECEF /* TFPopupExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPopupExtension.h; sourceTree = "<group>"; };
+		84A6CA6125AD72330018ECEF /* UIView+TFPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TFPopup.h"; sourceTree = "<group>"; };
+		84A6CA6225AD72330018ECEF /* UIScrollView+TFPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TFPopup.m"; sourceTree = "<group>"; };
+		84A6CA6325AD72330018ECEF /* NSObject+TFPopupMethodExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TFPopupMethodExchange.h"; sourceTree = "<group>"; };
+		84A6CA6425AD72330018ECEF /* TFPopupParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPopupParam.m; sourceTree = "<group>"; };
+		84A6CA6525AD72330018ECEF /* TFPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPopup.h; sourceTree = "<group>"; };
+		84A6CA6625AD72330018ECEF /* TFPopupLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPopupLoading.m; sourceTree = "<group>"; };
+		84A6CA6725AD72330018ECEF /* TFPopupToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPopupToast.m; sourceTree = "<group>"; };
+		84A6CA6825AD72330018ECEF /* UIView+TFPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TFPopup.m"; sourceTree = "<group>"; };
+		84A6CA6925AD72330018ECEF /* TFPopupExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPopupExtension.m; sourceTree = "<group>"; };
+		84A6CA7625AD72900018ECEF /* HomePopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePopView.swift; sourceTree = "<group>"; };
+		84A6CA9525AD77E80018ECEF /* SwiftTestDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftTestDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		84E810B425A5C029002FB774 /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		84E810CF25A804B3002FB774 /* HttpTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTools.swift; sourceTree = "<group>"; };
 		FABCAC615155ECF6011D985A /* Pods-SwiftTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftTestDemo/Pods-SwiftTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,19 +184,16 @@
 		848D4896259B327900B1734F /* SwiftTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84A6CAA025AD83760018ECEF /* Source */,
+				84A6CA7425AD72610018ECEF /* BaseView */,
+				84A6CA2825AC399B0018ECEF /* Tools */,
 				84E8110C25A85A2B002FB774 /* Classes */,
 				848D49ED259C53AA00B1734F /* Navigation */,
 				848D4897259B327900B1734F /* AppDelegate.swift */,
 				848D4899259B327900B1734F /* SceneDelegate.swift */,
 				848D489B259B327900B1734F /* ViewController.swift */,
-				848D4948259B39A400B1734F /* FirstViewController.swift */,
-				848D494D259B39B100B1734F /* SecondViewController.swift */,
-				848D4952259B39BC00B1734F /* ThirdViewController.swift */,
-				84E810B425A5C029002FB774 /* ForthViewController.swift */,
-				848D49CC259C2DD200B1734F /* HomeBaseTableViewCell.swift */,
-				849EF134259D6C4700B1BE97 /* HomeBaseCollectionViewCell.swift */,
-				84E810CF25A804B3002FB774 /* HttpTools.swift */,
 				848D49C7259C22D700B1734F /* LYHead.swift */,
+				84A6CA9525AD77E80018ECEF /* SwiftTestDemo-Bridging-Header.h */,
 				848D489D259B327900B1734F /* Main.storyboard */,
 				848D48A0259B327A00B1734F /* Assets.xcassets */,
 				848D48A2259B327A00B1734F /* LaunchScreen.storyboard */,
@@ -195,6 +230,83 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		84A6CA2825AC399B0018ECEF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				84E810CF25A804B3002FB774 /* HttpTools.swift */,
+				84A6CA5925AD72330018ECEF /* TFPopup */,
+				84A6CA2925AC39AF0018ECEF /* Category */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		84A6CA2925AC39AF0018ECEF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				84A6CA2A25AC39CC0018ECEF /* Button_Extendion.swift */,
+				84A6CA4125AD4ADA0018ECEF /* UIBarButtonItemExtension.swift */,
+				84A6CA5125AD54500018ECEF /* TitleButton.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		84A6CA5925AD72330018ECEF /* TFPopup */ = {
+			isa = PBXGroup;
+			children = (
+				84A6CA6325AD72330018ECEF /* NSObject+TFPopupMethodExchange.h */,
+				84A6CA5C25AD72330018ECEF /* NSObject+TFPopupMethodExchange.m */,
+				84A6CA6525AD72330018ECEF /* TFPopup.h */,
+				84A6CA5F25AD72330018ECEF /* TFPopupConst.h */,
+				84A6CA6025AD72330018ECEF /* TFPopupExtension.h */,
+				84A6CA6925AD72330018ECEF /* TFPopupExtension.m */,
+				84A6CA5E25AD72330018ECEF /* TFPopupLoading.h */,
+				84A6CA6625AD72330018ECEF /* TFPopupLoading.m */,
+				84A6CA5B25AD72330018ECEF /* TFPopupParam.h */,
+				84A6CA6425AD72330018ECEF /* TFPopupParam.m */,
+				84A6CA5D25AD72330018ECEF /* TFPopupToast.h */,
+				84A6CA6725AD72330018ECEF /* TFPopupToast.m */,
+				84A6CA5A25AD72330018ECEF /* UIScrollView+TFPopup.h */,
+				84A6CA6225AD72330018ECEF /* UIScrollView+TFPopup.m */,
+				84A6CA6125AD72330018ECEF /* UIView+TFPopup.h */,
+				84A6CA6825AD72330018ECEF /* UIView+TFPopup.m */,
+			);
+			path = TFPopup;
+			sourceTree = "<group>";
+		};
+		84A6CA7425AD72610018ECEF /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				84A6CA3725AD46040018ECEF /* BaseViewController.swift */,
+				84A6CA7525AD726B0018ECEF /* popView */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		84A6CA7525AD726B0018ECEF /* popView */ = {
+			isa = PBXGroup;
+			children = (
+				84A6CA7625AD72900018ECEF /* HomePopView.swift */,
+			);
+			path = popView;
+			sourceTree = "<group>";
+		};
+		84A6CA9F25AD834F0018ECEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				848D49CC259C2DD200B1734F /* HomeBaseTableViewCell.swift */,
+				849EF134259D6C4700B1BE97 /* HomeBaseCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84A6CAA025AD83760018ECEF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				84A6CA2325ABF7D50018ECEF /* marketOrderInfo.txt */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		84E8110C25A85A2B002FB774 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +323,7 @@
 		84E8110D25A85A2B002FB774 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				848D494D259B39B100B1734F /* SecondViewController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -218,6 +331,8 @@
 		84E8110E25A85A2B002FB774 /* Push */ = {
 			isa = PBXGroup;
 			children = (
+				84E810B425A5C029002FB774 /* ForthViewController.swift */,
+				848D4952259B39BC00B1734F /* ThirdViewController.swift */,
 			);
 			path = Push;
 			sourceTree = "<group>";
@@ -246,6 +361,9 @@
 		84E8111225A85A7F002FB774 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				84A6CA9F25AD834F0018ECEF /* Views */,
+				84A6CA3C25AD46810018ECEF /* HomeViewController.swift */,
+				848D4948259B39A400B1734F /* FirstViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -367,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				848D48A4259B327A00B1734F /* LaunchScreen.storyboard in Resources */,
+				84A6CA2425ABF7D50018ECEF /* marketOrderInfo.txt in Resources */,
 				848D48A1259B327A00B1734F /* Assets.xcassets in Resources */,
 				848D489F259B327900B1734F /* Main.storyboard in Resources */,
 			);
@@ -437,16 +556,29 @@
 			files = (
 				848D49F1259C53CB00B1734F /* WRCustomNavigationBar.swift in Sources */,
 				848D49F0259C53CB00B1734F /* WRNavigationBar.swift in Sources */,
+				84A6CA4225AD4ADA0018ECEF /* UIBarButtonItemExtension.swift in Sources */,
 				848D498C259C193500B1734F /* LYNavigationController.swift in Sources */,
+				84A6CA6A25AD72330018ECEF /* NSObject+TFPopupMethodExchange.m in Sources */,
+				84A6CA6F25AD72330018ECEF /* UIView+TFPopup.m in Sources */,
+				84A6CA3D25AD46810018ECEF /* HomeViewController.swift in Sources */,
 				848D494E259B39B100B1734F /* SecondViewController.swift in Sources */,
 				849EF135259D6C4700B1BE97 /* HomeBaseCollectionViewCell.swift in Sources */,
 				848D4953259B39BC00B1734F /* ThirdViewController.swift in Sources */,
 				848D489C259B327900B1734F /* ViewController.swift in Sources */,
+				84A6CA6B25AD72330018ECEF /* UIScrollView+TFPopup.m in Sources */,
 				848D4898259B327900B1734F /* AppDelegate.swift in Sources */,
+				84A6CA5225AD54500018ECEF /* TitleButton.swift in Sources */,
+				84A6CA2B25AC39CC0018ECEF /* Button_Extendion.swift in Sources */,
 				84E810B525A5C029002FB774 /* ForthViewController.swift in Sources */,
+				84A6CA7025AD72330018ECEF /* TFPopupExtension.m in Sources */,
 				84E810D025A804B3002FB774 /* HttpTools.swift in Sources */,
+				84A6CA6D25AD72330018ECEF /* TFPopupLoading.m in Sources */,
 				848D489A259B327900B1734F /* SceneDelegate.swift in Sources */,
+				84A6CA6E25AD72330018ECEF /* TFPopupToast.m in Sources */,
 				848D49CD259C2DD200B1734F /* HomeBaseTableViewCell.swift in Sources */,
+				84A6CA6C25AD72330018ECEF /* TFPopupParam.m in Sources */,
+				84A6CA7725AD72900018ECEF /* HomePopView.swift in Sources */,
+				84A6CA3825AD46040018ECEF /* BaseViewController.swift in Sources */,
 				848D49C8259C22D700B1734F /* LYHead.swift in Sources */,
 				848D4949259B39A400B1734F /* FirstViewController.swift in Sources */,
 			);
@@ -636,6 +768,7 @@
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.snrd.www.SwiftTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTestDemo/SwiftTestDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -656,6 +789,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.snrd.www.SwiftTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftTestDemo/SwiftTestDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
