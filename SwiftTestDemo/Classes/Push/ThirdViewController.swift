@@ -307,7 +307,7 @@ class ThirdViewController: BaseViewController {
 //            weakself?.view.backgroundColor  = UIColor.red
             self?.view.backgroundColor  = UIColor.red
         }
-        self.navigationController?.pushViewController(fourthVC, animated: true)
+//        self.navigationController?.pushViewController(fourthVC, animated: true)
     }
 
      deinit{

@@ -8,6 +8,10 @@
 import UIKit
 
 class HttpTools: NSObject {
+    
+    static let shareInstance: HttpTools = HttpTools()
+    var status = String()
+    
     //闭包作为函数参数---@escaping逃逸闭包,默认是非逃逸闭包@noescaping
     func lodaData(callBack:@escaping (_ jsonData : String) -> ()){
         //异步子线程

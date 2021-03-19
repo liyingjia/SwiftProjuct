@@ -18,7 +18,7 @@ let kScreenWidth = UIScreen.main.bounds.size.width
 
 //iPhonex以上判断
 
-let IS_IPhoneX_All = (kScreenHeight == 812 || kScreenHeight == 896)
+let IS_IPhoneX_All = (kScreenHeight == 812 || kScreenHeight == 896 || kScreenHeight == 1218 || kScreenHeight == 1344 || kScreenHeight == 844 || kScreenHeight == 926)
 
 //导航栏高
 

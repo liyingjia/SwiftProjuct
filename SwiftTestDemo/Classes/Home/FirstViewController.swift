@@ -13,7 +13,7 @@ import SnapKit
 class FirstViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate {
     //MARK: - 懒加载
     lazy var tableView : UITableView = UITableView()
-    
+
     let array = ["一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 当回忆久远 初心始现 我做了那么多改变 只是为了我心中不变 默默地深爱着你无论相见不相见 我做了那么多改变 只是为了我心中不变 我多想你看见","一天宛如一年","一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 ","一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 当回忆久远 初心始现 我做了那么多改变 只是为了我心中不变 默默地深爱着你无论相见不相见 我做了那么多改变 只是为了我心中不变 我多想你看见","一天宛如一年 一年宛如一天 任时光流转 我还是我 一现 我做了那么多改变 只是为了我心中不变 默默地深爱着你无论相见不相见 我做了那么多改变 只是为了我心中不变 我多想你看见","一天了千遍 千遍只为一遍那么多改变 只是为了我心中不变无论相见不相见 我做了那么多改变 只是看见","一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 当回忆久远 初心始现 我做了那么多改变 只是为了我心中不变 "]
     
     
@@ -34,7 +34,7 @@ class FirstViewController: BaseViewController,UITableViewDelegate,UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewCon = ForthViewController()
+        let viewCon = ViewController()
         self.navigationController?.pushViewController(viewCon, animated: true)
 //        let nav = LYNavigationController()
         
@@ -43,12 +43,12 @@ class FirstViewController: BaseViewController,UITableViewDelegate,UITableViewDat
     // MARK:-系统方法
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        HttpTools.shareInstance.status
         self.view.backgroundColor = UIColor.white
         self.title = "主页"
         navBarBarTintColor = UIColor.init(hex: "#FB0520")
         // 设置初始导航栏透明度
-        navBarBackgroundAlpha = 0
+//        navBarBackgroundAlpha = 0
         
         self.tableView = UITableView(frame: CGRect(x:0,y:0,width: 0,height: 0))
         self.tableView.delegate = self
@@ -77,25 +77,25 @@ class FirstViewController: BaseViewController,UITableViewDelegate,UITableViewDat
 // MARK: - 滑动改变导航栏透明度、标题颜色、左右按钮颜色、状态栏颜色
 extension FirstViewController
 {
-    func scrollViewDidScroll(_ scrollView: UIScrollView)
-    {
-        let offsetY = scrollView.contentOffset.y
-        if (offsetY > 100)
-        {
-            let alpha = (offsetY - 100) / CGFloat(WRNavigationBar.navBarBottom())
-            navBarBackgroundAlpha = alpha
-            navBarTintColor = UIColor.white.withAlphaComponent(alpha)
-            navBarTitleColor = UIColor.white.withAlphaComponent(alpha)
-            statusBarStyle = .default
-        }
-        else
-        {
-            navBarBackgroundAlpha = 0
-            navBarTintColor = .white
-            navBarTitleColor = .white
-            statusBarStyle = .lightContent
-        }
-    }
+//    func scrollViewDidScroll(_ scrollView: UIScrollView)
+//    {
+//        let offsetY = scrollView.contentOffset.y
+//        if (offsetY > 100)
+//        {
+//            let alpha = (offsetY - 100) / CGFloat(WRNavigationBar.navBarBottom())
+//            navBarBackgroundAlpha = alpha
+//            navBarTintColor = UIColor.white.withAlphaComponent(alpha)
+//            navBarTitleColor = UIColor.white.withAlphaComponent(alpha)
+//            statusBarStyle = .default
+//        }
+//        else
+//        {
+//            navBarBackgroundAlpha = 0
+//            navBarTintColor = .white
+//            navBarTitleColor = .white
+//            statusBarStyle = .lightContent
+//        }
+//    }
     
     
 }

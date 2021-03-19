@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ForthViewController: UIViewController {
+class ForthViewController: BaseViewController {
     
     var tools : HttpTools = HttpTools()
     var fourthVC : ViewController = ViewController()

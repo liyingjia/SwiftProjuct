@@ -331,7 +331,6 @@
 		84E8110E25A85A2B002FB774 /* Push */ = {
 			isa = PBXGroup;
 			children = (
-				84E810B425A5C029002FB774 /* ForthViewController.swift */,
 				848D4952259B39BC00B1734F /* ThirdViewController.swift */,
 			);
 			path = Push;
@@ -340,6 +339,7 @@
 		84E8110F25A85A2B002FB774 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				84E810B425A5C029002FB774 /* ForthViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -347,6 +347,7 @@
 		84E8111025A85A2B002FB774 /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				84A6CA3C25AD46810018ECEF /* HomeViewController.swift */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -362,7 +363,6 @@
 			isa = PBXGroup;
 			children = (
 				84A6CA9F25AD834F0018ECEF /* Views */,
-				84A6CA3C25AD46810018ECEF /* HomeViewController.swift */,
 				848D4948259B39A400B1734F /* FirstViewController.swift */,
 			);
 			path = Home;
@@ -758,6 +758,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M98VYFZASK;
 				INFOPLIST_FILE = SwiftTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -781,6 +782,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M98VYFZASK;
 				INFOPLIST_FILE = SwiftTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

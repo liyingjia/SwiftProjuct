@@ -21,6 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.customRemindStyle()
         self.setNavBarAppearence()
         guard let _ = (scene as? UIWindowScene) else { return }
+//        var windows = (UIApplication.shared.delegate as! AppDelegate).window
+//        windows  = window
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -56,8 +58,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let v1 = FirstViewController()
         let v2 = SecondViewController()
         let v3 = ThirdViewController()
-        let v4 = ThirdViewController()
-        let v5 = ThirdViewController()
+        let v4 = ForthViewController()
+        let v5 = HomeViewController()
         
         v1.tabBarItem = ESTabBarItem.init(title: "Home", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"))
         v2.tabBarItem = UITabBarItem.init(title: "Find", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))
@@ -75,8 +77,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let v1 = FirstViewController()
         let v2 = SecondViewController()
         let v3 = ThirdViewController()
-        let v4 = ThirdViewController()
-        let v5 = ThirdViewController()
+        let v4 = ForthViewController()
+        let v5 = HomeViewController()
         
         v1.tabBarItem = ESTabBarItem.init(title: "Home", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"))
         v2.tabBarItem = ESTabBarItem.init(title: "Find", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))

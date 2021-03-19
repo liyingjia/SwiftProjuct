@@ -26,6 +26,9 @@ target 'SwiftTestDemo' do
   pod 'Moya'
   pod 'SVProgressHUD'
   pod 'LLCycleScrollView'
+  pod 'SDWebImage'
+  pod 'MJRefresh'
+  pod 'WMZDropDownMenu'
 
   # Pods for SwiftTestDemo
 

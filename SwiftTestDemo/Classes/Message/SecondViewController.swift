@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SDWebImage
 
 class SecondViewController: BaseViewController,UICollectionViewDataSource,UICollectionViewDelegate,DelegateNames {
     
@@ -32,16 +32,16 @@ class SecondViewController: BaseViewController,UICollectionViewDataSource,UIColl
             make.bottom.equalTo(self.view).offset(-HYDevice_TabBar_Height)
         }
         collection.backgroundColor = UIColor.yellow
-        collection.isPagingEnabled = true
+        collection.isPagingEnabled = false
         collection.delegate = self
         collection.register(HomeBaseCollectionViewCell.self, forCellWithReuseIdentifier: "HomeBaseCollectionViewCell")
         collection.dataSource = self
         collection.showsHorizontalScrollIndicator = false
         
         let layout = collection.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width: 120, height: 180)
-        layout.minimumLineSpacing = 2
-        layout.minimumInteritemSpacing = 2
+        layout.itemSize = CGSize(width: (kScreenWidth/3-1), height: 140)
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .vertical
         
         popView.delegate = self
@@ -63,6 +63,7 @@ class SecondViewController: BaseViewController,UICollectionViewDataSource,UIColl
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeBaseCollectionViewCell", for: indexPath) as! HomeBaseCollectionViewCell
+            cell.imageView.sd_setImage(with: URL(string: "https://sn-prod-file.oss-cn-beijing.aliyuncs.com/mchPhoto/shop_shop3.png"), placeholderImage: UIImage.init(named: "message_1"))
             
             return cell
         }
