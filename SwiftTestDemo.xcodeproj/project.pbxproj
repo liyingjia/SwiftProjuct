@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3681E2FE05FA136D5EDE4B5A /* Pods_SwiftTestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6935C73A2C794BE1968853 /* Pods_SwiftTestDemo.framework */; };
+		847E0D822612F76C0049773F /* CWLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E0D812612F76C0049773F /* CWLog.swift */; };
+		847E0DE526144AEC0049773F /* SelectSaleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E0DE426144AEC0049773F /* SelectSaleType.swift */; };
+		847E0DED261451370049773F /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E0DEC261451370049773F /* UIView_Extension.swift */; };
+		847E0DF3261461D80049773F /* UIButton+LY_ImageLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 847E0DF2261461D80049773F /* UIButton+LY_ImageLocation.m */; };
+		847E0DF9261462B80049773F /* UIView+TapAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 847E0DF7261462B80049773F /* UIView+TapAction.m */; };
+		847E0DFF261463330049773F /* UIButton+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 847E0DFD261463330049773F /* UIButton+Block.m */; };
+		847E0E05261463C70049773F /* UIImage+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 847E0E04261463C70049773F /* UIImage+Gradient.m */; };
+		847E0E0A2614688C0049773F /* SelectTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E0E092614688C0049773F /* SelectTypeTableViewCell.swift */; };
+		847E0E0F26146D940049773F /* SelectTypeHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E0E0E26146D940049773F /* SelectTypeHeadView.swift */; };
 		848D4898259B327900B1734F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D4897259B327900B1734F /* AppDelegate.swift */; };
 		848D489A259B327900B1734F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D4899259B327900B1734F /* SceneDelegate.swift */; };
 		848D489C259B327900B1734F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D489B259B327900B1734F /* ViewController.swift */; };
@@ -65,6 +74,19 @@
 
 /* Begin PBXFileReference section */
 		5B0D22D0E87EEBC02972D389 /* Pods-SwiftTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTestDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftTestDemo/Pods-SwiftTestDemo.release.xcconfig"; sourceTree = "<group>"; };
+		847E0D812612F76C0049773F /* CWLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWLog.swift; sourceTree = "<group>"; };
+		847E0DE426144AEC0049773F /* SelectSaleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSaleType.swift; sourceTree = "<group>"; };
+		847E0DEC261451370049773F /* UIView_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Extension.swift; sourceTree = "<group>"; };
+		847E0DF1261461D70049773F /* UIButton+LY_ImageLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LY_ImageLocation.h"; sourceTree = "<group>"; };
+		847E0DF2261461D80049773F /* UIButton+LY_ImageLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LY_ImageLocation.m"; sourceTree = "<group>"; };
+		847E0DF7261462B80049773F /* UIView+TapAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TapAction.m"; sourceTree = "<group>"; };
+		847E0DF8261462B80049773F /* UIView+TapAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TapAction.h"; sourceTree = "<group>"; };
+		847E0DFD261463330049773F /* UIButton+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Block.m"; sourceTree = "<group>"; };
+		847E0DFE261463330049773F /* UIButton+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Block.h"; sourceTree = "<group>"; };
+		847E0E03261463C60049773F /* UIImage+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Gradient.h"; sourceTree = "<group>"; };
+		847E0E04261463C70049773F /* UIImage+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Gradient.m"; sourceTree = "<group>"; };
+		847E0E092614688C0049773F /* SelectTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTypeTableViewCell.swift; sourceTree = "<group>"; };
+		847E0E0E26146D940049773F /* SelectTypeHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTypeHeadView.swift; sourceTree = "<group>"; };
 		848D4894259B327900B1734F /* SwiftTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848D4897259B327900B1734F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848D4899259B327900B1734F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +181,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		847E0DE326144A920049773F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				847E0DE426144AEC0049773F /* SelectSaleType.swift */,
+				847E0E092614688C0049773F /* SelectTypeTableViewCell.swift */,
+				847E0E0E26146D940049773F /* SelectTypeHeadView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		848D488B259B327900B1734F = {
 			isa = PBXGroup;
 			children = (
@@ -184,11 +216,11 @@
 		848D4896259B327900B1734F /* SwiftTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				848D49ED259C53AA00B1734F /* Navigation */,
 				84A6CAA025AD83760018ECEF /* Source */,
 				84A6CA7425AD72610018ECEF /* BaseView */,
 				84A6CA2825AC399B0018ECEF /* Tools */,
 				84E8110C25A85A2B002FB774 /* Classes */,
-				848D49ED259C53AA00B1734F /* Navigation */,
 				848D4897259B327900B1734F /* AppDelegate.swift */,
 				848D4899259B327900B1734F /* SceneDelegate.swift */,
 				848D489B259B327900B1734F /* ViewController.swift */,
@@ -234,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				84E810CF25A804B3002FB774 /* HttpTools.swift */,
+				847E0D812612F76C0049773F /* CWLog.swift */,
 				84A6CA5925AD72330018ECEF /* TFPopup */,
 				84A6CA2925AC39AF0018ECEF /* Category */,
 			);
@@ -246,6 +279,15 @@
 				84A6CA2A25AC39CC0018ECEF /* Button_Extendion.swift */,
 				84A6CA4125AD4ADA0018ECEF /* UIBarButtonItemExtension.swift */,
 				84A6CA5125AD54500018ECEF /* TitleButton.swift */,
+				847E0DEC261451370049773F /* UIView_Extension.swift */,
+				847E0DF1261461D70049773F /* UIButton+LY_ImageLocation.h */,
+				847E0DF2261461D80049773F /* UIButton+LY_ImageLocation.m */,
+				847E0DF8261462B80049773F /* UIView+TapAction.h */,
+				847E0DF7261462B80049773F /* UIView+TapAction.m */,
+				847E0DFE261463330049773F /* UIButton+Block.h */,
+				847E0DFD261463330049773F /* UIButton+Block.m */,
+				847E0E03261463C60049773F /* UIImage+Gradient.h */,
+				847E0E04261463C70049773F /* UIImage+Gradient.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -323,6 +365,7 @@
 		84E8110D25A85A2B002FB774 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				847E0DE326144A920049773F /* View */,
 				848D494D259B39B100B1734F /* SecondViewController.swift */,
 			);
 			path = Message;
@@ -554,7 +597,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847E0DF3261461D80049773F /* UIButton+LY_ImageLocation.m in Sources */,
 				848D49F1259C53CB00B1734F /* WRCustomNavigationBar.swift in Sources */,
+				847E0E0F26146D940049773F /* SelectTypeHeadView.swift in Sources */,
 				848D49F0259C53CB00B1734F /* WRNavigationBar.swift in Sources */,
 				84A6CA4225AD4ADA0018ECEF /* UIBarButtonItemExtension.swift in Sources */,
 				848D498C259C193500B1734F /* LYNavigationController.swift in Sources */,
@@ -562,6 +607,7 @@
 				84A6CA6F25AD72330018ECEF /* UIView+TFPopup.m in Sources */,
 				84A6CA3D25AD46810018ECEF /* HomeViewController.swift in Sources */,
 				848D494E259B39B100B1734F /* SecondViewController.swift in Sources */,
+				847E0DED261451370049773F /* UIView_Extension.swift in Sources */,
 				849EF135259D6C4700B1BE97 /* HomeBaseCollectionViewCell.swift in Sources */,
 				848D4953259B39BC00B1734F /* ThirdViewController.swift in Sources */,
 				848D489C259B327900B1734F /* ViewController.swift in Sources */,
@@ -570,17 +616,23 @@
 				84A6CA5225AD54500018ECEF /* TitleButton.swift in Sources */,
 				84A6CA2B25AC39CC0018ECEF /* Button_Extendion.swift in Sources */,
 				84E810B525A5C029002FB774 /* ForthViewController.swift in Sources */,
+				847E0DFF261463330049773F /* UIButton+Block.m in Sources */,
+				847E0E05261463C70049773F /* UIImage+Gradient.m in Sources */,
 				84A6CA7025AD72330018ECEF /* TFPopupExtension.m in Sources */,
 				84E810D025A804B3002FB774 /* HttpTools.swift in Sources */,
+				847E0DF9261462B80049773F /* UIView+TapAction.m in Sources */,
 				84A6CA6D25AD72330018ECEF /* TFPopupLoading.m in Sources */,
 				848D489A259B327900B1734F /* SceneDelegate.swift in Sources */,
 				84A6CA6E25AD72330018ECEF /* TFPopupToast.m in Sources */,
 				848D49CD259C2DD200B1734F /* HomeBaseTableViewCell.swift in Sources */,
+				847E0D822612F76C0049773F /* CWLog.swift in Sources */,
 				84A6CA6C25AD72330018ECEF /* TFPopupParam.m in Sources */,
+				847E0DE526144AEC0049773F /* SelectSaleType.swift in Sources */,
 				84A6CA7725AD72900018ECEF /* HomePopView.swift in Sources */,
 				84A6CA3825AD46040018ECEF /* BaseViewController.swift in Sources */,
 				848D49C8259C22D700B1734F /* LYHead.swift in Sources */,
 				848D4949259B39A400B1734F /* FirstViewController.swift in Sources */,
+				847E0E0A2614688C0049773F /* SelectTypeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

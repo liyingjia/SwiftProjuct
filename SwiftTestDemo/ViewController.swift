@@ -37,7 +37,8 @@ func getWeatherInfo() -> Void {
                 switch response.result {
                 case .success(let json ):
                     let jsonDic = json as? NSDictionary
-                    print(jsonDic! as NSDictionary);
+//                    print(jsonDic! as NSDictionary);
+                    CWLog(jsonDic)
                     break
                 case .failure(let error):
                     print("error:\(error)")

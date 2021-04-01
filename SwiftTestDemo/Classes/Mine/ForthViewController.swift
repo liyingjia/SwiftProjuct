@@ -23,10 +23,23 @@ class ForthViewController: BaseViewController {
         swapNum(m: &m, n: &n)
         print("m:\(m),n:\(n)")
         
+        let result = calculate(v1: 10, v2: 20)
+        print(result.average,result.difference,result.sum)
+        print(calculate(v1: 10, v2: 20))
+        
         let person = Person()
         person.age = 20
         person.setValuesForKeys(["age":18,"name":"ly"])
         print("age:\(person.age)")
+        
+        //归档
+        let accountPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        (accountPath as NSString).appendingPathComponent("account.plist")
+        //保存
+        NSKeyedArchiver.archiveRootObject(100, toFile: accountPath)
+
+        
+        
         
         // Do any additional setup after loading the view.
     }
@@ -40,6 +53,13 @@ class ForthViewController: BaseViewController {
         let temp = m
         m = n
         n = temp
+    }
+    
+    //实现多返回值
+    func calculate(v1:Int,v2:Int) -> (sum:Int,difference:Int,average:Int) {
+        let sum = v1 + v2
+        //平均值  sum >> 1
+        return (sum,v1-v2,sum >> 1)
     }
     
     //类
@@ -66,5 +86,6 @@ class ForthViewController: BaseViewController {
      deinit{
         print("没有循环引用")
     }
+    
 
 }

@@ -9,5 +9,9 @@
 #define SwiftTestDemo_Bridging_Header_h
 
 #import "TFPopup.h"
+#import "UIButton+LY_ImageLocation.h"
+#import "UIView+TapAction.h"
+#import "UIButton+Block.h"
+#import "UIImage+Gradient.h"
 
 #endif /* SwiftTestDemo_Bridging_Header_h */

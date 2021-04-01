@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '10.0'
 
 target 'SwiftTestDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -23,12 +23,14 @@ target 'SwiftTestDemo' do
   pod 'NVActivityIndicatorView' #很多漂亮的加载指示器。
 #  pod 'DGElasticPullToRefresh' #有弹性效果的下拉刷新控件。
   pod 'WRNavigationBar' #,'~>1.2.0’
-  pod 'Moya'
   pod 'SVProgressHUD'
   pod 'LLCycleScrollView'
   pod 'SDWebImage'
   pod 'MJRefresh'
   pod 'WMZDropDownMenu'
+  pod 'FDFullscreenPopGesture'
+  pod 'CWLog'
+  pod 'AFNetworking'
 
   # Pods for SwiftTestDemo
 

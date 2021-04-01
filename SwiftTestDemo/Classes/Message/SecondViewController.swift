@@ -17,6 +17,8 @@ class SecondViewController: BaseViewController,UICollectionViewDataSource,UIColl
     let titleBtn : UIButton = TitleButton()
     let param:TFPopupParam = TFPopupParam()
     let popView:HomePopView = HomePopView()
+    let selectView:SelectSaleType = SelectSaleType()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,11 +101,16 @@ extension SecondViewController{
         
     }
     
-     private func registerBtnClick(){
+    @objc func registerBtnClick(){
         print("registerBtnClick")
+       
     }
     @objc func rightBtnClick(){
        print("rightBtnClick")
+//        param.popupSize = CGSize.init(width: 247 * 0.5, height: 243 * 0.5)
+        param.disuseShowPopupAlphaAnimation = true;
+        param.disuseHidePopupAlphaAnimation = true;
+        selectView.tf_showFold(self.view, targetFrame: CGRect.init(x: 0, y: kScreenHeight-450, width: kScreenWidth, height: 450), direction: .bottom, popupParam: param)
    }
     @objc private func titleBtnClick(btn:TitleButton){
         btn.isSelected = !btn.isSelected

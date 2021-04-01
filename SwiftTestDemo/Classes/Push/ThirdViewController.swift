@@ -192,6 +192,9 @@ class ThirdViewController: BaseViewController {
         for (key, value) in dictM {
             print(key,value)
         }
+        for i in stride(from: 3, through: 11, by: 2) {
+           print(i) //5  7  9  11
+        }
         //合并元素  类型相同也不能相加合并
     }
     // MARK:-可选类型的shiyong
@@ -250,7 +253,8 @@ class ThirdViewController: BaseViewController {
             return
         }
         
-        print(dict)
+        CWLog(dict)
+        
     }
     
     // MARK:-异常处理方法--3中处理方式

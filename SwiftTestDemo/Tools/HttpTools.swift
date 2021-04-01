@@ -5,12 +5,27 @@
 //  Created by wangxiaodong on 2021/1/8.
 //
 
-import UIKit
+import AFNetworking
 
-class HttpTools: NSObject {
+enum RequestType {
+    case GET
+    case POST
+}
+
+class HttpTools: AFHTTPSessionManager {
     
-    static let shareInstance: HttpTools = HttpTools()
+    static let shareInstance: HttpTools = {
+        let tools = HttpTools()
+        tools.responseSerializer.acceptableContentTypes?.insert("text/html")
+        return tools
+        
+    }()
+    
+    
+    
+    
     var status = String()
+    
     
     //闭包作为函数参数---@escaping逃逸闭包,默认是非逃逸闭包@noescaping
     func lodaData(callBack:@escaping (_ jsonData : String) -> ()){
@@ -23,5 +38,20 @@ class HttpTools: NSObject {
                 callBack("jsonData数据")
             }
         }
+    }
+}
+
+
+extension HttpTools{
+    func request(methodType:RequestType,urlString:String,parameters:[String:AnyObject],finished:@escaping ( _ result:AnyObject?, _ error:Error?)->()){
+//        let successCallBack =
+//        let successCallBack = {(task:URLSessionDataTask,result:AnyObject?) -> Void in
+//            finished(result,nil)
+//        }
+//        let failCallBack = {(task:URLSessionDataTask?,error:Error) -> Void in
+//            finished(nil,error)
+//        }
+        
+        
     }
 }
