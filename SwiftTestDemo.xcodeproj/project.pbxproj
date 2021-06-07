@@ -17,6 +17,7 @@
 		847E0E05261463C70049773F /* UIImage+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 847E0E04261463C70049773F /* UIImage+Gradient.m */; };
 		847E0E0A2614688C0049773F /* SelectTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E0E092614688C0049773F /* SelectTypeTableViewCell.swift */; };
 		847E0E0F26146D940049773F /* SelectTypeHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E0E0E26146D940049773F /* SelectTypeHeadView.swift */; };
+		847E0EE12616C1FC0049773F /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E0EE02616C1FC0049773F /* BaseTabBarViewController.swift */; };
 		848D4898259B327900B1734F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D4897259B327900B1734F /* AppDelegate.swift */; };
 		848D489A259B327900B1734F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D4899259B327900B1734F /* SceneDelegate.swift */; };
 		848D489C259B327900B1734F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D489B259B327900B1734F /* ViewController.swift */; };
@@ -87,6 +88,7 @@
 		847E0E04261463C70049773F /* UIImage+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Gradient.m"; sourceTree = "<group>"; };
 		847E0E092614688C0049773F /* SelectTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTypeTableViewCell.swift; sourceTree = "<group>"; };
 		847E0E0E26146D940049773F /* SelectTypeHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTypeHeadView.swift; sourceTree = "<group>"; };
+		847E0EE02616C1FC0049773F /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		848D4894259B327900B1734F /* SwiftTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848D4897259B327900B1734F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848D4899259B327900B1734F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -216,7 +218,6 @@
 		848D4896259B327900B1734F /* SwiftTestDemo */ = {
 			isa = PBXGroup;
 			children = (
-				848D49ED259C53AA00B1734F /* Navigation */,
 				84A6CAA025AD83760018ECEF /* Source */,
 				84A6CA7425AD72610018ECEF /* BaseView */,
 				84A6CA2825AC399B0018ECEF /* Tools */,
@@ -318,8 +319,10 @@
 		84A6CA7425AD72610018ECEF /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				848D49ED259C53AA00B1734F /* Navigation */,
 				84A6CA3725AD46040018ECEF /* BaseViewController.swift */,
 				84A6CA7525AD726B0018ECEF /* popView */,
+				847E0EE02616C1FC0049773F /* BaseTabBarViewController.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -610,6 +613,7 @@
 				847E0DED261451370049773F /* UIView_Extension.swift in Sources */,
 				849EF135259D6C4700B1BE97 /* HomeBaseCollectionViewCell.swift in Sources */,
 				848D4953259B39BC00B1734F /* ThirdViewController.swift in Sources */,
+				847E0EE12616C1FC0049773F /* BaseTabBarViewController.swift in Sources */,
 				848D489C259B327900B1734F /* ViewController.swift in Sources */,
 				84A6CA6B25AD72330018ECEF /* UIScrollView+TFPopup.m in Sources */,
 				848D4898259B327900B1734F /* AppDelegate.swift in Sources */,

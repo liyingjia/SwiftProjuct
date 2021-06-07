@@ -18,7 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 //        self.setupTabBar()
-        self.customRemindStyle()
+//        self.customRemindStyle()
+        self.window?.rootViewController = BaseTabBarViewController()
         self.setNavBarAppearence()
         guard let _ = (scene as? UIWindowScene) else { return }
 //        var windows = (UIApplication.shared.delegate as! AppDelegate).window
@@ -51,73 +52,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
-    }
-    // MARK: - Private
-    func setupTabBar() {
-        let tabBarController = ESTabBarController()
-        let v1 = FirstViewController()
-        let v2 = SecondViewController()
-        let v3 = ThirdViewController()
-        let v4 = ForthViewController()
-        let v5 = HomeViewController()
-        
-        v1.tabBarItem = ESTabBarItem.init(title: "Home", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"))
-        v2.tabBarItem = UITabBarItem.init(title: "Find", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))
-        v3.tabBarItem = ESTabBarItem.init(title: "Photo", image: UIImage(named: "photo"), selectedImage: UIImage(named: "photo_1"))
-        v4.tabBarItem = UITabBarItem.init(title: "Favor", image: UIImage(named: "favor"), selectedImage: UIImage(named: "favor_1"))
-        v5.tabBarItem = ESTabBarItem.init(title: "Me", image: UIImage(named: "me"), selectedImage: UIImage(named: "me_1"))
-        
-        tabBarController.viewControllers = [v1, v2, v3, v4, v5]
-                
-        self.window?.rootViewController = tabBarController
-    }
-    
-    func customRemindStyle() {
-        let tabBarController = ESTabBarController()
-        let v1 = FirstViewController()
-        let v2 = SecondViewController()
-        let v3 = ThirdViewController()
-        let v4 = ForthViewController()
-        let v5 = HomeViewController()
-        
-        v1.tabBarItem = ESTabBarItem.init(title: "Home", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"))
-        v2.tabBarItem = ESTabBarItem.init(title: "Find", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))
-        v3.tabBarItem = ESTabBarItem.init(title: "Photo", image: UIImage(named: "photo"), selectedImage: UIImage(named: "photo_1"))
-        v4.tabBarItem = ESTabBarItem.init(title: "Favor", image: UIImage(named: "favor"), selectedImage: UIImage(named: "favor_1"))
-        v5.tabBarItem = ESTabBarItem.init(title: "Me", image: UIImage(named: "me"), selectedImage: UIImage(named: "me_1"))
-        
-        if let tabBarItem = v1.tabBarItem as? ESTabBarItem {
-            tabBarItem.badgeValue = "New"
-        }
-        if let tabBarItem = v2.tabBarItem as? ESTabBarItem {
-            tabBarItem.badgeValue = "99+"
-        }
-        if let tabBarItem = v3.tabBarItem as? ESTabBarItem {
-            tabBarItem.badgeValue = "1"
-            tabBarItem.badgeColor = UIColor.blue
-        }
-        if let tabBarItem = v4.tabBarItem as? ESTabBarItem {
-            tabBarItem.badgeValue = ""
-        }
-        if let tabBarItem = v5.tabBarItem as? ESTabBarItem {
-            tabBarItem.badgeValue = nil
-        }
-        
-        let navigationController1 = LYNavigationController.init(rootViewController: v1)
-        let navigationController2 = LYNavigationController.init(rootViewController: v2)
-        let navigationController3 = LYNavigationController.init(rootViewController: v3)
-        let navigationController4 = LYNavigationController.init(rootViewController: v4)
-        let navigationController5 = LYNavigationController.init(rootViewController: v5)
-        
-        tabBarController.viewControllers = [navigationController1, navigationController2, navigationController3, navigationController4, navigationController5]
-        
-        v1.title = "主页"
-        v2.title = "添加"
-        v3.title = "我的"
-        v4.title = "我的"
-        v5.title = "我的"
-    
-        self.window?.rootViewController = tabBarController
     }
     
     func setNavBarAppearence()

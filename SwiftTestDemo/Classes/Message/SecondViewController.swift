@@ -101,7 +101,7 @@ extension SecondViewController{
         
     }
     
-    @objc func registerBtnClick(){
+     override func registerBtnClick(){
         print("registerBtnClick")
        
     }

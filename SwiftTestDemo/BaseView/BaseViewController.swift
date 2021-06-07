@@ -26,11 +26,11 @@ extension BaseViewController{
 }
 
 extension BaseViewController{
-    @objc private func registerBtnClick(){
+    @objc open func registerBtnClick(){
         print("registerBtnClick")
     }
     
-    @objc private func loginBtnClick(){
+    @objc open func loginBtnClick(){
         print("loginBtnClick")
     }
 }

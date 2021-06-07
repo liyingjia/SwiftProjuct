@@ -15,5 +15,15 @@ class HomeViewController: BaseViewController {
         
         // Do any additional setup after loading the view.
     }
+    
+    
 
 }
+
+extension HomeViewController{
+    func handleOpenURL(url:NSURL, result:(_ result : Bool) -> ()) {
+        
+    }
+}
+
+

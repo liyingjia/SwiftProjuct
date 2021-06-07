@@ -31,6 +31,9 @@ target 'SwiftTestDemo' do
   pod 'FDFullscreenPopGesture'
   pod 'CWLog'
   pod 'AFNetworking'
+  pod 'SwiftTheme'#换肤
+  pod "Toast"  #toast弹框提示
+  pod "BMPlayer" #视频播放器
 
   # Pods for SwiftTestDemo
 

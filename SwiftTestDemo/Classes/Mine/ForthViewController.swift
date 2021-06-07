@@ -14,7 +14,7 @@ class ForthViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "push来的"
+//        self.title = "push来的"
         self.view.backgroundColor = UIColor.yellow
         print(makeCoffee())
         print(makeCoffee(coffeeName: "拿铁"))

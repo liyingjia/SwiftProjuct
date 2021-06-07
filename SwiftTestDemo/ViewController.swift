@@ -49,6 +49,7 @@ func getWeatherInfo() -> Void {
         SVProgressHUD.dismiss()
     }
     
+    
 }
 
 func LYLog<T>(message : T,file : String = #file, funcName : String = #function, lineNum : Int = #line) {
