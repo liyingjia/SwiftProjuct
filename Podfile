@@ -34,6 +34,11 @@ target 'SwiftTestDemo' do
   pod 'SwiftTheme'#换肤
   pod "Toast"  #toast弹框提示
   pod "BMPlayer" #视频播放器
+  pod 'TZImagePickerController' #iOS8 and later
+  pod 'Reusable'
+  pod 'EmptyDataSet-Swift'
+  pod 'IQKeyboardManagerSwift'
+#  pod 'TFPopup' # 通用弹出框架
 
   # Pods for SwiftTestDemo
 
