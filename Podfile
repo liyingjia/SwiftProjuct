@@ -33,12 +33,13 @@ target 'SwiftTestDemo' do
   pod 'AFNetworking'
   pod 'SwiftTheme'#换肤
   pod "Toast"  #toast弹框提示
-  pod "BMPlayer" #视频播放器
+#  pod 'BMPlayer', '~> 1.3.0' #视频播放器  ZFPlayer
   pod 'TZImagePickerController' #iOS8 and later
   pod 'Reusable'
   pod 'EmptyDataSet-Swift'
   pod 'IQKeyboardManagerSwift'
 #  pod 'TFPopup' # 通用弹出框架
+  pod 'TABAnimated' #骨架屏框架
 
   # Pods for SwiftTestDemo
 

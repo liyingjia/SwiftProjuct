@@ -2,7 +2,7 @@
 //  FirstViewController.swift
 //  SwiftTestDemo
 //
-//  Created by wangxiaodong on 2020/12/29.
+//  Created by liying on 2020/12/29.
 //
 
 
@@ -56,16 +56,42 @@ class FirstViewController: BaseViewController,UITableViewDelegate,UITableViewDat
         self.tableView.tableFooterView = UIView()
         self.tableView.estimatedRowHeight = 49
         self.tableView.register(HomeBaseTableViewCell.classForCoder(), forCellReuseIdentifier: "HomeBaseTableViewCell")
+        
+        self.tableView.tabAnimated = TABTableAnimated.init(cellClass: HomeBaseTableViewCell.classForCoder(), cellHeight: 100)
+        self.tableView.tabAnimated?.canLoadAgain = true
+        self.tableView.tabAnimated?.adjustBlock = { (manager) in
+            manager.animation()?(0)?.height()(12)?.width()(50)
+            manager.animation()?(1)?.down()(-5)?.reducedWidth()(-20)
+        }
+        
         self.view.addSubview(self.tableView)
+        
         self.tableView.snp_makeConstraints { (make) in
             make.top.equalTo(self.view).offset(0)
             make.left.right.equalTo(self.view).offset(0)
             make.bottom.equalTo(self.view).offset(-HYDevice_TabBar_Height)
         }
         LYLog(message: 1243)
+        
+        self.tableView.tab_startAnimation {
+            
+            self.afterGetData()
+        }
+        
     }
     
-   
+    override func loginBtnClick() {
+        self.tableView.tab_startAnimation {
+            
+            self.afterGetData()
+        }
+    }
+    
+    func afterGetData() -> Void {
+        sleep(3)
+        self.tableView.reloadData()
+        self.tableView.tab_endAnimation()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

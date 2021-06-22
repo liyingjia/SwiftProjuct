@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SwiftTestDemo
 //
-//  Created by wangxiaodong on 2020/12/29.
+//  Created by liying on 2020/12/29.
 //
 
 import UIKit
@@ -19,6 +19,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 //        self.setupTabBar()
 //        self.customRemindStyle()
+        
+        TABAnimated.shared()?.initWithOnlySkeleton()
+        TABAnimated.shared()?.openLog = true
+        TABAnimated.shared()?.openAnimationTag = true
+        
+        
         self.window?.rootViewController = BaseTabBarViewController()
         self.setNavBarAppearence()
         guard let _ = (scene as? UIWindowScene) else { return }

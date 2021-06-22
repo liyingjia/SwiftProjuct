@@ -2,7 +2,7 @@
 //  SwiftTestDemo-Bridging-Header.h
 //  SwiftTestDemo
 //
-//  Created by wangxiaodong on 2021/1/12.
+//  Created by liying on 2021/1/12.
 //
 
 #ifndef SwiftTestDemo_Bridging_Header_h
@@ -13,5 +13,5 @@
 #import "UIView+TapAction.h"
 #import "UIButton+Block.h"
 #import "UIImage+Gradient.h"
-
+#import "TABAnimated.h"
 #endif /* SwiftTestDemo_Bridging_Header_h */

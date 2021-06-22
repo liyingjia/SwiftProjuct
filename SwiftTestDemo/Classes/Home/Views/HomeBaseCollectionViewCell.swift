@@ -2,7 +2,7 @@
 //  HomeBaseCollectionViewCell.swift
 //  SwiftTestDemo
 //
-//  Created by wangxiaodong on 2020/12/31.
+//  Created by liying on 2020/12/31.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  SelectSaleType.swift
 //  SwiftTestDemo
 //
-//  Created by wangxiaodong on 2021/3/31.
+//  Created by liying on 2021/3/31.
 //
 
 import UIKit
