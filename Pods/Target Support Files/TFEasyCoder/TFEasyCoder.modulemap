@@ -1,0 +1,6 @@
+framework module TFEasyCoder {
+  umbrella header "TFEasyCoder-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -14,7 +14,7 @@ class BaseTabBarViewController: ESTabBarController {
         super.viewDidLoad()
         
         self.addChildViewControllers()
-                
+        self.selectedIndex = 0;
         // Do any additional setup after loading the view.
     }
     
@@ -98,6 +98,7 @@ extension BaseTabBarViewController{
         setChildViewController(childController: ThirdViewController(), title: "发现", normalImageName: "photo", selectImageName: "photo_1")
         setChildViewController(childController: ForthViewController(), title: "消息", normalImageName: "favor", selectImageName: "favor_1")
         setChildViewController(childController: HomeViewController(), title: "我的", normalImageName: "me", selectImageName: "me_1")
+        self.selectedIndex = 0;
     }
     
     func setChildViewController(childController: UIViewController, title: NSString, normalImageName: NSString,selectImageName: NSString) -> Void {

@@ -40,7 +40,8 @@ target 'SwiftTestDemo' do
   pod 'IQKeyboardManagerSwift'
 #  pod 'TFPopup' # 通用弹出框架
   pod 'TABAnimated' #骨架屏框架
-
+  pod 'MBProgressHUD'
+  pod 'TFEasyCoder'# 普通开发工具包
   # Pods for SwiftTestDemo
 
 #  target 'SwiftTestDemoTests' do

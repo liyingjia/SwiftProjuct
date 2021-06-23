@@ -14,4 +14,5 @@
 #import "UIButton+Block.h"
 #import "UIImage+Gradient.h"
 #import "TABAnimated.h"
+#import "TFKit.h"
 #endif /* SwiftTestDemo_Bridging_Header_h */

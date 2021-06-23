@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        self.setupTabBar()
 //        self.customRemindStyle()
         
-        TABAnimated.shared()?.initWithOnlySkeleton()
+        TABAnimated.shared()?.initWithShimmerAnimated()
         TABAnimated.shared()?.openLog = true
         TABAnimated.shared()?.openAnimationTag = true
         

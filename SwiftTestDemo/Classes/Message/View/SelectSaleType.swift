@@ -70,7 +70,7 @@ class SelectSaleType: UIView,UITableViewDelegate,UITableViewDataSource {
     
     var sureBtn:UIButton = {
         let sureBtn = UIButton()
-        sureBtn.backgroundColor = UIColor.blue
+//        sureBtn.backgroundColor = UIColor.blue
         sureBtn.setTitle("确定", for: .normal)
         sureBtn.gradientButton(with: CGSize.init(width: 140, height: 45), colorArray: [UIColor.init(hex: "#2A8DFF"),UIColor.init(hex: "#0D5DFE")], percentageArray: [0,1], gradientType: .GradientFromLeftToRight)
         return sureBtn

@@ -8,13 +8,13 @@
 
 import UIKit
 import SnapKit
-
+import TFEasyCoder
 
 class FirstViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate {
     //MARK: - 懒加载
     lazy var tableView : UITableView = UITableView()
-
-    let array = ["一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 当回忆久远 初心始现 我做了那么多改变 只是为了我心中不变 默默地深爱着你无论相见不相见 我做了那么多改变 只是为了我心中不变 我多想你看见","一天宛如一年","一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 ","一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 当回忆久远 初心始现 我做了那么多改变 只是为了我心中不变 默默地深爱着你无论相见不相见 我做了那么多改变 只是为了我心中不变 我多想你看见","一天宛如一年 一年宛如一天 任时光流转 我还是我 一现 我做了那么多改变 只是为了我心中不变 默默地深爱着你无论相见不相见 我做了那么多改变 只是为了我心中不变 我多想你看见","一天了千遍 千遍只为一遍那么多改变 只是为了我心中不变无论相见不相见 我做了那么多改变 只是看见","一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 当回忆久远 初心始现 我做了那么多改变 只是为了我心中不变 "]
+    
+    var array = ["一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 当回忆久远 初心始现 我做了那么多改变 只是为了我心中不变 默默地深爱着你无论相见不相见 我做了那么多改变 只是为了我心中不变 我多想你看见","一天宛如一年","一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 ","一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 当回忆久远 初心始现 我做了那么多改变 只是为了我心中不变 默默地深爱着你无论相见不相见 我做了那么多改变 只是为了我心中不变 我多想你看见","一天宛如一年 一年宛如一天 任时光流转 我还是我 一现 我做了那么多改变 只是为了我心中不变 默默地深爱着你无论相见不相见 我做了那么多改变 只是为了我心中不变 我多想你看见","一天了千遍 千遍只为一遍那么多改变 只是为了我心中不变无论相见不相见 我做了那么多改变 只是看见","一天宛如一年 一年宛如一天 任时光流转 我还是我 一遍用了千遍 千遍只为一遍 当回忆久远 初心始现 我做了那么多改变 只是为了我心中不变 "]
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -60,8 +60,8 @@ class FirstViewController: BaseViewController,UITableViewDelegate,UITableViewDat
         self.tableView.tabAnimated = TABTableAnimated.init(cellClass: HomeBaseTableViewCell.classForCoder(), cellHeight: 100)
         self.tableView.tabAnimated?.canLoadAgain = true
         self.tableView.tabAnimated?.adjustBlock = { (manager) in
-            manager.animation()?(0)?.height()(12)?.width()(50)
-            manager.animation()?(1)?.down()(-5)?.reducedWidth()(-20)
+            manager.animation()?(0)?.height()(12)?.width()(100)
+            manager.animation()?(1)?.up()(10)
         }
         
         self.view.addSubview(self.tableView)
@@ -78,6 +78,18 @@ class FirstViewController: BaseViewController,UITableViewDelegate,UITableViewDat
             self.afterGetData()
         }
         
+        self.tableView.tab_addPullLoadingActionHandler {
+            self.array.append("我做了那么多改变")
+            self.array.append("我做了那么多改变")
+            self.array.append("我做了那么多改变")
+            self.array.append("我做了那么多改变")
+            self.array.append("我做了那么多改变")
+
+            self.afterGetData()
+            sleep(2)
+            self.tableView.tab_stopPullLoading()
+        }
+        
     }
     
     override func loginBtnClick() {
@@ -88,7 +100,6 @@ class FirstViewController: BaseViewController,UITableViewDelegate,UITableViewDat
     }
     
     func afterGetData() -> Void {
-        sleep(3)
         self.tableView.reloadData()
         self.tableView.tab_endAnimation()
     }

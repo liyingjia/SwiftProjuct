@@ -42,13 +42,23 @@ class SecondViewController: BaseViewController,UICollectionViewDataSource,UIColl
         
         let layout = collection.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: (kScreenWidth/3-1), height: 140)
-        layout.minimumLineSpacing = 0
+        layout.minimumLineSpacing = 2
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .vertical
         
+        
+//        collection.tabAnimated = TABCollectionAnimated.init(cellClass: HomeBaseCollectionViewCell.self, cellSize: CGSize(width: (kScreenWidth/3-1), height: 140))
+        collection.tabAnimated =
+            TABCollectionAnimated.init(waterFallLayoutWithCellClass: HomeBaseCollectionViewCell.self, heightArray: [140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140,140], heightSel: Selector(("waterFallLayout:heightForItemAtIndex:itemWidth:")))
+        collection.tabAnimated?.canLoadAgain = true
+        collection.tabAnimated?.adjustBlock = {manager in
+            manager.animation()?(2)?.height()(15)
+        }
+//        collection.tabAnimated?.superAnimationType
+        
         popView.delegate = self
-        //闭包回传值
-        popView.setClickIndexItem { (Int) in
+        //闭包回传值0
+        popView.setClickIndexItem { (index) in
             self.titleBtn.isSelected = false
             self.popView.tf_hide()
         }
@@ -57,6 +67,9 @@ class SecondViewController: BaseViewController,UICollectionViewDataSource,UIColl
         
         setupNavigationBar()
         
+        collection.tab_startAnimation {
+            self.afterGetData()
+        }
     }
     
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -73,6 +86,11 @@ class SecondViewController: BaseViewController,UICollectionViewDataSource,UIColl
     func method(index: Int) {
         self.titleBtn.isSelected = false
         self.popView.tf_hide()
+    }
+    
+    func afterGetData() -> Void {
+        self.collection.reloadData()
+        self.collection.tab_endAnimation()
     }
 
     override func didReceiveMemoryWarning() {
