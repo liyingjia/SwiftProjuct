@@ -119,10 +119,6 @@ extension SecondViewController{
         
     }
     
-     override func registerBtnClick(){
-        print("registerBtnClick")
-       
-    }
     @objc func rightBtnClick(){
        print("rightBtnClick")
 //        param.popupSize = CGSize.init(width: 247 * 0.5, height: 243 * 0.5)

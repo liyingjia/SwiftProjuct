@@ -42,6 +42,7 @@ target 'SwiftTestDemo' do
   pod 'TABAnimated' #骨架屏框架
   pod 'MBProgressHUD'
   pod 'TFEasyCoder'# 普通开发工具包
+  pod 'JXSegmentedView', '0.0.4'
   # Pods for SwiftTestDemo
 
 #  target 'SwiftTestDemoTests' do

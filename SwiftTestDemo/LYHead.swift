@@ -38,7 +38,7 @@ let HYDevice_SafeArea_BottomHeight = (IS_IPhoneX_All ? 34 : 0)
 
 /**宽度比例*/
 
-func XL_ScaleWidth(_ font:CGFloat) -> (CGFloat) {
+func HYScaleWidth(_ font:CGFloat) -> (CGFloat) {
 
    return (kScreenWidth/375)*font
 
@@ -46,7 +46,7 @@ func XL_ScaleWidth(_ font:CGFloat) -> (CGFloat) {
 
 /**高度比例*/
 
-func XL_ScaleHeight(_ font:CGFloat) -> (CGFloat) {
+func HYScaleHeight(_ font:CGFloat) -> (CGFloat) {
 
   return  kScreenHeight/667*font
 
@@ -54,7 +54,7 @@ func XL_ScaleHeight(_ font:CGFloat) -> (CGFloat) {
 
 /**字体比例*/
 
-func XL_ScaleFont(_ font:CGFloat) -> (CGFloat) {
+func HYScaleFont(_ font:CGFloat) -> (CGFloat) {
 
     return  kScreenWidth/375*font
 

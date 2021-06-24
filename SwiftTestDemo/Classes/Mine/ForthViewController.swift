@@ -14,7 +14,8 @@ class ForthViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.title = "push来的"
+        
+        
         self.view.backgroundColor = UIColor.yellow
         print(makeCoffee())
         print(makeCoffee(coffeeName: "拿铁"))
@@ -38,8 +39,14 @@ class ForthViewController: BaseViewController {
         //保存
         NSKeyedArchiver.archiveRootObject(100, toFile: accountPath)
 
-        
-        
+        self.view.addSubview(self.tableView)
+        self.tableView.snp_makeConstraints { (make) in
+            make.top.equalTo(self.view).offset(0)
+            make.left.right.equalTo(self.view)
+            make.bottom.equalTo(self.view)
+        }
+        //设置空白页
+        self.configEmptyView(application: .Dropbox, viewController: self)
         
         // Do any additional setup after loading the view.
     }
