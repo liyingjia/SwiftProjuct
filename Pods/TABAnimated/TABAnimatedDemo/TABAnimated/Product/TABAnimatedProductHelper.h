@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class TABAnimatedProduction, TABComponentLayer;
+@class TABAnimatedProduction, TABComponentLayer, TABViewAnimated;
 
 #define TABAnimatedProductHelperScreenWidth [UIScreen mainScreen].bounds.size.width
 
@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @param view 目标view
 */
-+ (BOOL)canProduct:(UIView *)view;
++ (BOOL)canProduct:(UIView *)view tabAnimated:(TABViewAnimated *)tabAnimated;
 
 + (TABComponentLayer *)getBackgroundLayerWithView:(UIView *)view controlView:(UIView *)controlView;
 
@@ -50,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 @param layer 目标layer
 @param isLines 是否为多行layer
 */
-+ (void)addTagWithComponentLayer:(TABComponentLayer *)layer isLines:(BOOL)isLines;
++ (void)addTagWithComponentLayer:(TABComponentLayer *)layer isLines:(BOOL)isLines needFrame:(BOOL)needFrame superLayer:(TABComponentLayer *)superLayer;
 
 /**
 获取指定情景下production的key

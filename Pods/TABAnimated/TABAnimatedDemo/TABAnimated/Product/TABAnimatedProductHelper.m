@@ -137,7 +137,15 @@ static const CGFloat kTagLabelMinWidth = 15.f;
     }
 }
 
-+ (BOOL)canProduct:(UIView *)view {
++ (BOOL)canProduct:(UIView *)view tabAnimated:(TABViewAnimated *)tabAnimated {
+    
+    if ([view isKindOfClass:[UITextField class]] && tabAnimated.needToCreateTextFieldLayer) {
+        return YES;
+    }
+    
+    if ([view.superview isKindOfClass:[UITextField class]]) {
+        return NO;
+    }
     
     if ([view isKindOfClass:[UICollectionView class]] || [view isKindOfClass:[UITableView class]]) {
         // 判断view为tableview/collectionview时，若有设置骨架动画，则返回NO；否则返回YES，允许设置绘制骨架图
@@ -204,7 +212,7 @@ static const CGFloat kTagLabelMinWidth = 15.f;
             UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:layer.originFrame cornerRadius:layer.cornerRadius];
             [penetratePath appendPath:path];
         }
-        [production.backgroundLayer addLayer:layer viewWidth:view.frame.size.width animatedHeight:animatedHeight];
+        [production.backgroundLayer addLayer:layer viewWidth:view.frame.size.width animatedHeight:animatedHeight superLayer:production.backgroundLayer];
     }
     
     if (isNeedPenetrate) {
@@ -255,26 +263,36 @@ static const CGFloat kTagLabelMinWidth = 15.f;
     return backgroundLayer;
 }
 
-+ (void)addTagWithComponentLayer:(TABComponentLayer *)layer isLines:(BOOL)isLines {
++ (void)addTagWithComponentLayer:(TABComponentLayer *)layer isLines:(BOOL)isLines needFrame:(BOOL)needFrame superLayer:(TABComponentLayer *)superLayer {
+    
     CATextLayer *textLayer = [CATextLayer layer];
     CGFloat width = layer.frame.size.width > kTagLabelMinWidth ? layer.frame.size.width : kTagLabelMinWidth;
     if (layer.tagName.length > 0) {
-        textLayer.string = [NSString stringWithFormat:@"%@ %ld", layer.tagName, (long)layer.tagIndex];
-    }else {
+        textLayer.string = [NSString stringWithFormat:@"%ld %@", (long)layer.tagIndex, layer.tagName];
+    } else {
         textLayer.string = [NSString stringWithFormat:@"%ld", (long)layer.tagIndex];
     }
-    if (isLines) {
-        textLayer.frame = CGRectMake(0, 0, width, kTagLabelHeight);
-    }else if (layer.origin != TABComponentLayerOriginImageView) {
+    
+    if (needFrame) {
+        textLayer.frame = CGRectMake(layer.frame.origin.x, layer.frame.origin.y, width, kTagLabelHeight);
+    }else if (isLines || layer.origin != TABComponentLayerOriginImageView) {
         textLayer.frame = CGRectMake(layer.bounds.origin.x, layer.bounds.origin.y, width, kTagLabelHeight);
-    }else {
+    } else {
         textLayer.frame = CGRectMake(0, layer.frame.size.height / 2.0, width, kTagLabelHeight);
     }
+    
+    if (!needFrame) {
+        CGRect resultFrame = [layer convertRect:textLayer.frame toLayer:superLayer];
+        textLayer.frame = resultFrame;
+    }
+    
     textLayer.contentsScale = ([[UIScreen mainScreen] scale] > 3.0) ? [[UIScreen mainScreen] scale] : 3.0;
     textLayer.fontSize = kTagDefaultFontSize;
     textLayer.alignmentMode = kCAAlignmentCenter;
     textLayer.foregroundColor = UIColor.redColor.CGColor;
-    [layer addSublayer:textLayer];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [superLayer addSublayer:textLayer];
+    });
 }
 
 + (nullable NSString *)getKeyWithControllerName:(NSString *)controllerName targetClass:(Class)targetClass frame:(CGRect)frame {

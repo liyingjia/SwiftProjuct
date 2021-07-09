@@ -1,0 +1,187 @@
+PODS:
+  - ActiveLabel (1.1.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Alamofire (5.4.3)
+  - CWLog (1.0.4)
+  - EmptyDataSet-Swift (5.0.0)
+  - ESTabBarController-swift (2.8.0)
+  - FDFullscreenPopGesture (1.1)
+  - Hue (5.0.0)
+  - ImagePicker (3.2.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - JXSegmentedView (0.0.4)
+  - Kingfisher (6.3.0)
+  - Koloda (5.0.1):
+    - pop (~> 1.0)
+  - LLCycleScrollView (1.6.0):
+    - Kingfisher
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.3.1)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - PhoneNumberKit (3.3.3):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.3.3)
+    - PhoneNumberKit/UIKit (= 3.3.3)
+  - PhoneNumberKit/PhoneNumberKitCore (3.3.3)
+  - PhoneNumberKit/UIKit (3.3.3):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - pop (1.0.12)
+  - RAMAnimatedTabBarController (5.2.0)
+  - Reachability (3.2)
+  - Reusable (4.1.1):
+    - Reusable/Storyboard (= 4.1.1)
+    - Reusable/View (= 4.1.1)
+  - Reusable/Storyboard (4.1.1)
+  - Reusable/View (4.1.1)
+  - SCLAlertView (0.8)
+  - SDWebImage (5.4.1):
+    - SDWebImage/Core (= 5.4.1)
+  - SDWebImage/Core (5.4.1)
+  - SnapKit (5.0.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftTheme (0.6.0)
+  - SwiftyJSON (5.0.1)
+  - TABAnimated (2.5.9)
+  - TextFieldEffects (1.6.0)
+  - TFEasyCoder (1.6.8)
+  - Toast (4.0.0)
+  - TZImagePickerController (3.2.9)
+  - WMZDropDownMenu (1.1.6)
+  - WRNavigationBar (1.3.0)
+
+DEPENDENCIES:
+  - ActiveLabel
+  - AFNetworking
+  - Alamofire
+  - CWLog
+  - EmptyDataSet-Swift
+  - ESTabBarController-swift
+  - FDFullscreenPopGesture
+  - Hue (~> 5.0.0)
+  - ImagePicker
+  - IQKeyboardManagerSwift
+  - JXSegmentedView (= 0.0.4)
+  - Kingfisher
+  - Koloda
+  - LLCycleScrollView
+  - MBProgressHUD
+  - MJRefresh
+  - Moya
+  - NVActivityIndicatorView
+  - PhoneNumberKit
+  - RAMAnimatedTabBarController
+  - Reachability
+  - Reusable
+  - SCLAlertView
+  - SDWebImage
+  - SnapKit
+  - SVProgressHUD
+  - SwiftTheme
+  - SwiftyJSON
+  - TABAnimated
+  - TextFieldEffects
+  - TFEasyCoder
+  - Toast
+  - TZImagePickerController
+  - WMZDropDownMenu
+  - WRNavigationBar
+
+SPEC REPOS:
+  trunk:
+    - ActiveLabel
+    - AFNetworking
+    - Alamofire
+    - CWLog
+    - EmptyDataSet-Swift
+    - ESTabBarController-swift
+    - FDFullscreenPopGesture
+    - Hue
+    - ImagePicker
+    - IQKeyboardManagerSwift
+    - JXSegmentedView
+    - Kingfisher
+    - Koloda
+    - LLCycleScrollView
+    - MBProgressHUD
+    - MJRefresh
+    - Moya
+    - NVActivityIndicatorView
+    - PhoneNumberKit
+    - pop
+    - RAMAnimatedTabBarController
+    - Reachability
+    - Reusable
+    - SCLAlertView
+    - SDWebImage
+    - SnapKit
+    - SVProgressHUD
+    - SwiftTheme
+    - SwiftyJSON
+    - TABAnimated
+    - TextFieldEffects
+    - TFEasyCoder
+    - Toast
+    - TZImagePickerController
+    - WMZDropDownMenu
+    - WRNavigationBar
+
+SPEC CHECKSUMS:
+  ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  CWLog: 3cbbe6b7fb51cd120c8ae8fce7e911341468e790
+  EmptyDataSet-Swift: eb382c0c87a2d9c678077385a595cec52da38171
+  ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  Hue: c129cb67be7d093a82bbbc30ce8a96757bf6f37a
+  ImagePicker: 1d950bbb2422548ed58791b4ec7f42fe42920511
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  JXSegmentedView: 2b036fc37f26fbd369f79b8953c610efe19bd529
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
+  Koloda: d07b9199a383abc5898b62aa945a599f5e7c0c4b
+  LLCycleScrollView: a08f666671f9fd1a205df9defebc3c217d59abc8
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  PhoneNumberKit: 4ce83273551c4d2ae10b7361162f4283dd02835f
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  RAMAnimatedTabBarController: 6863a386e7ae2ab227cd60aa73ab8ff56cdacfdd
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SDWebImage: 29c340dbdcef342bb13125553f4e19ce056b07a7
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftTheme: 50c3b3d38bdee43212af1f4ec0fb95dec550b2be
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  TABAnimated: 8d077a20de46de0c7744c665cd56aae28c49d397
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+  TFEasyCoder: 47337f520d2cb22292e5cb9b5ccf01942ed853e8
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TZImagePickerController: 1f92968aa0e98a06b9e2eccca8560acc19254257
+  WMZDropDownMenu: 6d8ec030a4467fb95e285709e525587abceb4960
+  WRNavigationBar: 84935d8d39d2504a10a8d33688ab169b6a209521
+
+PODFILE CHECKSUM: c4bd0cf1734e5605766862fdd72ebbfc4cbc94d1
+
+COCOAPODS: 1.9.3

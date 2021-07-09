@@ -30,24 +30,25 @@ class ViewController: UIViewController {
 }
 
 func getWeatherInfo() -> Void {
-    let weatherUrl:String = "http://weatherapi.market.xiaomi.com/wtr-v2/temp/realtime?cityId="
-    let parameters = ["cityId":"101040100"];
-    SVProgressHUD.show()
-    Alamofire.request(weatherUrl,method:.get,parameters:parameters,encoding: URLEncoding.default).responseJSON { (response) in
-                switch response.result {
-                case .success(let json ):
-                    let jsonDic = json as? NSDictionary
-//                    print(jsonDic! as NSDictionary);
-                    CWLog(jsonDic)
-                    break
-                case .failure(let error):
-                    print("error:\(error)")
-                    break
-                }
-            }
-    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-        SVProgressHUD.dismiss()
-    }
+//    let weatherUrl:String = "http://weatherapi.market.xiaomi.com/wtr-v2/temp/realtime?cityId="
+//    let parameters = ["cityId":"101040100"];
+//    SVProgressHUD.show()
+    
+//    Alamofire.request(weatherUrl,method:.get,parameters:parameters,encoding: URLEncoding.default).responseJSON { (response) in
+//                switch response.result {
+//                case .success(let json ):
+//                    let jsonDic = json as? NSDictionary
+////                    print(jsonDic! as NSDictionary);
+//                    CWLog(jsonDic)
+//                    break
+//                case .failure(let error):
+//                    print("error:\(error)")
+//                    break
+//                }
+//            }
+//    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+//        SVProgressHUD.dismiss()
+//    }
     
     
 }
