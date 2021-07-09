@@ -24,6 +24,9 @@ class ViewController: UIViewController {
         SVProgressHUD.setDefaultStyle(.dark)
         SVProgressHUD.setDefaultAnimationType(.native)
         SVProgressHUD.show(withStatus: "加载中。。。")
+        tf_delay(2) {
+            SVProgressHUD.dismiss()
+        }
     }
 
 

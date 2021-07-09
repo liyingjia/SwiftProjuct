@@ -19,7 +19,6 @@
 		847E0E0F26146D940049773F /* SelectTypeHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E0E0E26146D940049773F /* SelectTypeHeadView.swift */; };
 		847E0EE12616C1FC0049773F /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E0EE02616C1FC0049773F /* BaseTabBarViewController.swift */; };
 		848D4898259B327900B1734F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D4897259B327900B1734F /* AppDelegate.swift */; };
-		848D489A259B327900B1734F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D4899259B327900B1734F /* SceneDelegate.swift */; };
 		848D489C259B327900B1734F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D489B259B327900B1734F /* ViewController.swift */; };
 		848D489F259B327900B1734F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D489D259B327900B1734F /* Main.storyboard */; };
 		848D48A1259B327A00B1734F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848D48A0259B327A00B1734F /* Assets.xcassets */; };
@@ -295,6 +294,21 @@
 		84E39906268489BF00C599D9 /* UIView+IDeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E39811268489BE00C599D9 /* UIView+IDeal.swift */; };
 		84E810B525A5C029002FB774 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E810B425A5C029002FB774 /* ForthViewController.swift */; };
 		84E810D025A804B3002FB774 /* HttpTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E810CF25A804B3002FB774 /* HttpTools.swift */; };
+		C5055EC92698418F006B685B /* ZLaunchAdWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5055EBB2698418B006B685B /* ZLaunchAdWindow.swift */; };
+		C5055ECA2698418F006B685B /* ZLaunchAdMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5055EBF2698418C006B685B /* ZLaunchAdMD5.swift */; };
+		C5055ECB2698418F006B685B /* ZLaunchLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5055EC02698418C006B685B /* ZLaunchLog.swift */; };
+		C5055ECC2698418F006B685B /* ZLaunchAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5055EC12698418C006B685B /* ZLaunchAdView.swift */; };
+		C5055ECD2698418F006B685B /* ZLaunchAdCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5055EC22698418D006B685B /* ZLaunchAdCache.swift */; };
+		C5055ECE2698418F006B685B /* ZLaunchAdConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5055EC32698418D006B685B /* ZLaunchAdConfig.swift */; };
+		C5055ECF2698418F006B685B /* ZLaunchAdAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5055EC42698418D006B685B /* ZLaunchAdAnimation.swift */; };
+		C5055ED02698418F006B685B /* ZLaunchAdButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5055EC52698418E006B685B /* ZLaunchAdButton.swift */; };
+		C5055ED12698418F006B685B /* ZLaunchAdImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5055EC62698418E006B685B /* ZLaunchAdImageView.swift */; };
+		C5055ED22698418F006B685B /* ZLaunchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5055EC72698418E006B685B /* ZLaunchImageView.swift */; };
+		C5055ED32698418F006B685B /* ZLaunchAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5055EC82698418F006B685B /* ZLaunchAd.swift */; };
+		C5055ED6269841A8006B685B /* 启动页.png in Resources */ = {isa = PBXBuildFile; fileRef = C5055ED4269841A6006B685B /* 启动页.png */; };
+		C5055ED7269841A8006B685B /* aaa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5055ED5269841A7006B685B /* aaa@3x.png */; };
+		C5055ED9269841B6006B685B /* AdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5055ED8269841B6006B685B /* AdModel.swift */; };
+		C5055EDD269850D6006B685B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C5055EDC269850D6006B685B /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -332,7 +346,6 @@
 		847E0EE02616C1FC0049773F /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		848D4894259B327900B1734F /* SwiftTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848D4897259B327900B1734F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		848D4899259B327900B1734F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		848D489B259B327900B1734F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		848D489E259B327900B1734F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		848D48A0259B327A00B1734F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -624,6 +637,23 @@
 		84E39811268489BE00C599D9 /* UIView+IDeal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+IDeal.swift"; sourceTree = "<group>"; };
 		84E810B425A5C029002FB774 /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		84E810CF25A804B3002FB774 /* HttpTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTools.swift; sourceTree = "<group>"; };
+		C5055EBB2698418B006B685B /* ZLaunchAdWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAdWindow.swift; sourceTree = "<group>"; };
+		C5055EBD2698418B006B685B /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		C5055EBE2698418B006B685B /* CommonCryptoHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCryptoHeader.h; sourceTree = "<group>"; };
+		C5055EBF2698418C006B685B /* ZLaunchAdMD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAdMD5.swift; sourceTree = "<group>"; };
+		C5055EC02698418C006B685B /* ZLaunchLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchLog.swift; sourceTree = "<group>"; };
+		C5055EC12698418C006B685B /* ZLaunchAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAdView.swift; sourceTree = "<group>"; };
+		C5055EC22698418D006B685B /* ZLaunchAdCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAdCache.swift; sourceTree = "<group>"; };
+		C5055EC32698418D006B685B /* ZLaunchAdConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAdConfig.swift; sourceTree = "<group>"; };
+		C5055EC42698418D006B685B /* ZLaunchAdAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAdAnimation.swift; sourceTree = "<group>"; };
+		C5055EC52698418E006B685B /* ZLaunchAdButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAdButton.swift; sourceTree = "<group>"; };
+		C5055EC62698418E006B685B /* ZLaunchAdImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAdImageView.swift; sourceTree = "<group>"; };
+		C5055EC72698418E006B685B /* ZLaunchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchImageView.swift; sourceTree = "<group>"; };
+		C5055EC82698418F006B685B /* ZLaunchAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLaunchAd.swift; sourceTree = "<group>"; };
+		C5055ED4269841A6006B685B /* 启动页.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "启动页.png"; sourceTree = "<group>"; };
+		C5055ED5269841A7006B685B /* aaa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aaa@3x.png"; sourceTree = "<group>"; };
+		C5055ED8269841B6006B685B /* AdModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdModel.swift; sourceTree = "<group>"; };
+		C5055EDC269850D6006B685B /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		FABCAC615155ECF6011D985A /* Pods-SwiftTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTestDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftTestDemo/Pods-SwiftTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		FE6935C73A2C794BE1968853 /* Pods_SwiftTestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -707,7 +737,6 @@
 				84A6CA2825AC399B0018ECEF /* Tools */,
 				84E8110C25A85A2B002FB774 /* Classes */,
 				848D4897259B327900B1734F /* AppDelegate.swift */,
-				848D4899259B327900B1734F /* SceneDelegate.swift */,
 				848D489B259B327900B1734F /* ViewController.swift */,
 				848D49C7259C22D700B1734F /* LYHead.swift */,
 				84A6CA9525AD77E80018ECEF /* SwiftTestDemo-Bridging-Header.h */,
@@ -838,6 +867,10 @@
 				84E396B1268426D200C599D9 /* applications.json */,
 				84E396A72684264C00C599D9 /* Application.swift */,
 				84E396B6268426E400C599D9 /* Configuration.swift */,
+				C5055ED8269841B6006B685B /* AdModel.swift */,
+				C5055ED4269841A6006B685B /* 启动页.png */,
+				C5055ED5269841A7006B685B /* aaa@3x.png */,
+				C5055EDC269850D6006B685B /* data.json */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -1447,6 +1480,7 @@
 		84E8110C25A85A2B002FB774 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C5055EBA26984175006B685B /* LaunchAd */,
 				84E8111225A85A7F002FB774 /* Home */,
 				84E8111125A85A2B002FB774 /* Main */,
 				84E8110D25A85A2B002FB774 /* Message */,
@@ -1504,6 +1538,34 @@
 				848D4948259B39A400B1734F /* FirstViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		C5055EBA26984175006B685B /* LaunchAd */ = {
+			isa = PBXGroup;
+			children = (
+				C5055EBC2698418B006B685B /* CommonCrypto */,
+				C5055EC82698418F006B685B /* ZLaunchAd.swift */,
+				C5055EC42698418D006B685B /* ZLaunchAdAnimation.swift */,
+				C5055EC52698418E006B685B /* ZLaunchAdButton.swift */,
+				C5055EC22698418D006B685B /* ZLaunchAdCache.swift */,
+				C5055EC32698418D006B685B /* ZLaunchAdConfig.swift */,
+				C5055EC62698418E006B685B /* ZLaunchAdImageView.swift */,
+				C5055EBF2698418C006B685B /* ZLaunchAdMD5.swift */,
+				C5055EC12698418C006B685B /* ZLaunchAdView.swift */,
+				C5055EBB2698418B006B685B /* ZLaunchAdWindow.swift */,
+				C5055EC72698418E006B685B /* ZLaunchImageView.swift */,
+				C5055EC02698418C006B685B /* ZLaunchLog.swift */,
+			);
+			path = LaunchAd;
+			sourceTree = "<group>";
+		};
+		C5055EBC2698418B006B685B /* CommonCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				C5055EBD2698418B006B685B /* module.modulemap */,
+				C5055EBE2698418B006B685B /* CommonCryptoHeader.h */,
+			);
+			path = CommonCrypto;
 			sourceTree = "<group>";
 		};
 		D91263A190DB6EBE1C51F9FD /* Frameworks */ = {
@@ -1630,6 +1692,7 @@
 				84E398A3268489BE00C599D9 /* takePicture.png in Resources */,
 				84E39886268489BE00C599D9 /* ic_pen_grey@2x.png in Resources */,
 				848D48A4259B327A00B1734F /* LaunchScreen.storyboard in Resources */,
+				C5055EDD269850D6006B685B /* data.json in Resources */,
 				84E398A9268489BF00C599D9 /* icn_icn_cut.png in Resources */,
 				84E39887268489BE00C599D9 /* btn_back_w@3x.png in Resources */,
 				84E398D8268489BF00C599D9 /* ChooseView.xib in Resources */,
@@ -1668,6 +1731,7 @@
 				84E39881268489BE00C599D9 /* icn_icn_text@3x.png in Resources */,
 				84E39875268489BE00C599D9 /* icn_icn_text.png in Resources */,
 				84E39903268489BF00C599D9 /* ic_load_failure@2x.png in Resources */,
+				C5055ED6269841A8006B685B /* 启动页.png in Resources */,
 				84E39855268489BE00C599D9 /* ic_toast_success.png in Resources */,
 				84E39904268489BF00C599D9 /* ic_empty@2x.png in Resources */,
 				84E398D9268489BF00C599D9 /* CLSingleTypeCell.xib in Resources */,
@@ -1711,6 +1775,7 @@
 				84E398B8268489BF00C599D9 /* photo_sel_photoPicker2.png in Resources */,
 				84E3988D268489BE00C599D9 /* btn_back2@3x.png in Resources */,
 				84E398B6268489BF00C599D9 /* icn_icn_del.png in Resources */,
+				C5055ED7269841A8006B685B /* aaa@3x.png in Resources */,
 				84E3989D268489BE00C599D9 /* icn_icn_finish@3x.png in Resources */,
 				84E398A8268489BF00C599D9 /* photo_sel_photoPicker.png in Resources */,
 				84E398A4268489BE00C599D9 /* icn_icn_finish.png in Resources */,
@@ -1811,6 +1876,7 @@
 			files = (
 				84E398D7268489BF00C599D9 /* CLSingleTypeCell.swift in Sources */,
 				84E39900268489BF00C599D9 /* AppConfig.swift in Sources */,
+				C5055ED9269841B6006B685B /* AdModel.swift in Sources */,
 				84E3984C268489BE00C599D9 /* IDButton.swift in Sources */,
 				84E39844268489BE00C599D9 /* IDLabel.swift in Sources */,
 				84E398EA268489BF00C599D9 /* IDRefreshLoadView.swift in Sources */,
@@ -1818,12 +1884,14 @@
 				84E398BE268489BF00C599D9 /* CLCropViewController.swift in Sources */,
 				84E3963426831C8400C599D9 /* CLCollectionView.swift in Sources */,
 				84E3963526831C8400C599D9 /* UIButton+Extensions.swift in Sources */,
+				C5055ECC2698418F006B685B /* ZLaunchAdView.swift in Sources */,
 				84E39868268489BE00C599D9 /* InputBrush.swift in Sources */,
 				84E398FD268489BF00C599D9 /* IDDialogNormalView.swift in Sources */,
 				84E3983B268489BE00C599D9 /* IDColorExtension.swift in Sources */,
 				84E39845268489BE00C599D9 /* IDSearchBar.swift in Sources */,
 				84E398D3268489BF00C599D9 /* CustomNavgationView.swift in Sources */,
 				84E3963226831C8400C599D9 /* UIImageView+Extensions.swift in Sources */,
+				C5055ED22698418F006B685B /* ZLaunchImageView.swift in Sources */,
 				84E3983D268489BE00C599D9 /* IDealistConfig.swift in Sources */,
 				84E3986F268489BE00C599D9 /* GaussianBlurBrush.swift in Sources */,
 				84E398EE268489BF00C599D9 /* IDLoadingNavUtil.swift in Sources */,
@@ -1832,6 +1900,7 @@
 				84E39836268489BE00C599D9 /* IDDateExtension.swift in Sources */,
 				84E3963F26831C8400C599D9 /* CLAfter_Time.swift in Sources */,
 				84E398FF268489BF00C599D9 /* IDDialog.swift in Sources */,
+				C5055ECE2698418F006B685B /* ZLaunchAdConfig.swift in Sources */,
 				847E0DF3261461D80049773F /* UIButton+LY_ImageLocation.m in Sources */,
 				84E398C2268489BF00C599D9 /* CLPreviewViewController.swift in Sources */,
 				848D49F1259C53CB00B1734F /* WRCustomNavigationBar.swift in Sources */,
@@ -1844,10 +1913,14 @@
 				84E398BD268489BF00C599D9 /* IDPreviewViewController.swift in Sources */,
 				848D49F0259C53CB00B1734F /* WRNavigationBar.swift in Sources */,
 				84E3985A268489BE00C599D9 /* IDToast.swift in Sources */,
+				C5055ECD2698418F006B685B /* ZLaunchAdCache.swift in Sources */,
 				84E398DC268489BF00C599D9 /* MiniCollectionView.swift in Sources */,
 				84E39860268489BE00C599D9 /* PopViewUtil.swift in Sources */,
+				C5055EC92698418F006B685B /* ZLaunchAdWindow.swift in Sources */,
+				C5055ECF2698418F006B685B /* ZLaunchAdAnimation.swift in Sources */,
 				84A6CA4225AD4ADA0018ECEF /* UIBarButtonItemExtension.swift in Sources */,
 				84E398EB268489BF00C599D9 /* NavProgressView.swift in Sources */,
+				C5055ED12698418F006B685B /* ZLaunchAdImageView.swift in Sources */,
 				848D498C259C193500B1734F /* LYNavigationController.swift in Sources */,
 				84E39846268489BE00C599D9 /* IDImage.swift in Sources */,
 				84E3964026831C8400C599D9 /* CLMPHUD.swift in Sources */,
@@ -1856,6 +1929,7 @@
 				84E39843268489BE00C599D9 /* IDTextField.swift in Sources */,
 				84E3986D268489BE00C599D9 /* BaseBrush.swift in Sources */,
 				84E3964426831C8400C599D9 /* RegisterCell+Extension.swift in Sources */,
+				C5055ECB2698418F006B685B /* ZLaunchLog.swift in Sources */,
 				84E39847268489BE00C599D9 /* IDView.swift in Sources */,
 				84E398CD268489BF00C599D9 /* CLVideoPlayView.swift in Sources */,
 				84E3984F268489BE00C599D9 /* ScreenTools.swift in Sources */,
@@ -1897,6 +1971,7 @@
 				84E39862268489BE00C599D9 /* MessageStyleView.swift in Sources */,
 				84E398E7268489BF00C599D9 /* IDLoadingFreeUtil.swift in Sources */,
 				84E398FE268489BF00C599D9 /* IDDialogCustomView.swift in Sources */,
+				C5055ED02698418F006B685B /* ZLaunchAdButton.swift in Sources */,
 				84E3963326831C8400C599D9 /* UIImage+Extention.swift in Sources */,
 				84E810B525A5C029002FB774 /* ForthViewController.swift in Sources */,
 				84E398C0268489BF00C599D9 /* CLImagePickerSingleViewController.swift in Sources */,
@@ -1913,6 +1988,7 @@
 				84E3984B268489BE00C599D9 /* IDProgressCircleView.swift in Sources */,
 				84E398CA268489BF00C599D9 /* CLImagePickerPhotoModel.swift in Sources */,
 				84E3985F268489BE00C599D9 /* HDAlertViewController.swift in Sources */,
+				C5055ECA2698418F006B685B /* ZLaunchAdMD5.swift in Sources */,
 				84E3963D26831C8400C599D9 /* CLPCHCommon.swift in Sources */,
 				84E398FC268489BF00C599D9 /* IDDialogManager.swift in Sources */,
 				84E3963B26831C8400C599D9 /* CLTableView.swift in Sources */,
@@ -1939,7 +2015,6 @@
 				84E39840268489BE00C599D9 /* IDTextView.swift in Sources */,
 				84A6CA6D25AD72330018ECEF /* TFPopupLoading.m in Sources */,
 				84E398E9268489BF00C599D9 /* Config.swift in Sources */,
-				848D489A259B327900B1734F /* SceneDelegate.swift in Sources */,
 				84E398D1268489BF00C599D9 /* ChooseView.swift in Sources */,
 				84A6CA6E25AD72330018ECEF /* TFPopupToast.m in Sources */,
 				84E3984A268489BE00C599D9 /* IDProgressView.swift in Sources */,
@@ -1948,6 +2023,7 @@
 				84E396C62684343D00C599D9 /* UIBarButtonItem+Extension.swift in Sources */,
 				847E0D822612F76C0049773F /* CWLog.swift in Sources */,
 				84A6CA6C25AD72330018ECEF /* TFPopupParam.m in Sources */,
+				C5055ED32698418F006B685B /* ZLaunchAd.swift in Sources */,
 				84E39865268489BE00C599D9 /* HDAlertWindowView.swift in Sources */,
 				84E39905268489BF00C599D9 /* IDEmptyView.swift in Sources */,
 				847E0DE526144AEC0049773F /* SelectSaleType.swift in Sources */,

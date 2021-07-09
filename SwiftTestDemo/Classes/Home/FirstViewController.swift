@@ -66,29 +66,30 @@ class FirstViewController: BaseViewController {
         
         self.view.addSubview(self.tableView)
         
-        self.tableView.snp_makeConstraints { (make) in
+        self.tableView.snp.makeConstraints { (make) in
             make.top.equalTo(self.view).offset(0)
             make.left.right.equalTo(self.view).offset(0)
             make.bottom.equalTo(self.view).offset(-HYDevice_TabBar_Height)
         }
+       
         LYLog(message: 1243)
         
-        self.tableView.tab_startAnimation {
-            
-            self.afterGetData()
-        }
-        
-        self.tableView.tab_addPullLoadingActionHandler {
-            self.array.append("我做了那么多改变")
-            self.array.append("我做了那么多改变")
-            self.array.append("我做了那么多改变")
-            self.array.append("我做了那么多改变")
-            self.array.append("我做了那么多改变")
-
-            self.afterGetData()
-            sleep(2)
-            self.tableView.tab_stopPullLoading()
-        }
+//        self.tableView.tab_startAnimation {
+//            
+//            self.afterGetData()
+//        }
+//        
+//        self.tableView.tab_addPullLoadingActionHandler {
+//            self.array.append("我做了那么多改变")
+//            self.array.append("我做了那么多改变")
+//            self.array.append("我做了那么多改变")
+//            self.array.append("我做了那么多改变")
+//            self.array.append("我做了那么多改变")
+//
+//            self.afterGetData()
+//            sleep(2)
+//            self.tableView.tab_stopPullLoading()
+//        }
         
     }
     
